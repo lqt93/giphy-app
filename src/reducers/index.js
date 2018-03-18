@@ -1,8 +1,10 @@
 import { combineReducers } from 'redux'
-import authentication from './authentication';
+import authentication from './authentication'
+import giphy from './giphy'
 
 const App = combineReducers({
-  authentication
+  authentication,
+  giphy
 })
 
 export default App
