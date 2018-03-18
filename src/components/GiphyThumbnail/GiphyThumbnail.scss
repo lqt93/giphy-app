@@ -1,0 +1,25 @@
+.giphy-thumbnail {
+  display: inline-block;
+  vertical-align: middle;
+  width: 25%;
+
+  .thumnail-container {
+    width: 100%;
+    position: relative;
+    background-color: white;
+    padding: 20px;
+
+    img {
+      max-height: 100%;
+      max-width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%)
+    }
+  }
+  .user-container{
+
+  }
+}
