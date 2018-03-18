@@ -1,10 +1,40 @@
 .gif-viewer {
   background-color: #f4f4f4;
-  border-radius: 15px;
+  border-radius: 8px;
   padding: 20px;
   .gif__img-container {
     img {
       width: 100%;
+    }
+  }
+  .gif__user-container {
+    padding: 10px 0;
+    .user-row {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .user-ava {
+      margin-right: 15px;
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+    }
+    .user-info {
+      .gif-title {
+        font-weight: bold;
+        font-size: 20px;
+      }
+      .info-row {
+        a {
+          text-decoration: none;
+          color: #3a8bbb;
+        }
+        a:hover {
+          color: #1e6189;
+        }
+      }
     }
   }
 }

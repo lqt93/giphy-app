@@ -25,6 +25,17 @@ class GifViewerModal extends React.Component {
           <div className='gif__img-container'>
             <img src={GifViewer.data.images.downsized_large.url} alt='gif-img' />
           </div>
+          <div className='gif__user-container'>
+            <div className='user-row user-ava'>
+              <a href={GifViewer.data.user.profile_url} target='__blank'>
+                <img src={GifViewer.data.user.avatar_url} alt='user-ava' />
+              </a>
+            </div>
+            <div className='user-row user-info'>
+              <div className='info-row gif-title'> {GifViewer.data.title.split(' by ')[0]} </div>
+              <div className='info-row'> by <a href={GifViewer.data.user.profile_url} target='__blank'> {GifViewer.data.username} </a> on <span> {GifViewer.data.import_datetime} </span> </div>
+            </div>
+          </div>
         </div>
       </DefaultModal>
     )
