@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 import './GiphyThumbnail.scss'
 
 class GiphyThumbnail extends React.Component {
@@ -19,7 +19,10 @@ class GiphyThumbnail extends React.Component {
           </div>
         </div>
         <div className='user-container'>
-          {userInfo.username}
+          <a href={userInfo.profile_url}  target='__blank'>
+            <span className='user-ava'> <img src={userInfo.avatar_url} alt='user-ava' /> </span>
+            <span className='user-name'> {userInfo.username} </span>
+          </a>
         </div>
       </div>
     )

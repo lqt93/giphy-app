@@ -27,7 +27,21 @@
     }
   }
   .user-container{
-
+    padding: 5px;
+    a {
+      text-decoration: none;
+      color: #3a8bbb;
+    }
+    a:hover {
+      color: #1e6189;
+    }
+    .user-ava {
+      img {
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+      }
+    }
   }
 }
 
