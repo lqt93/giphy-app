@@ -2,10 +2,11 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import './Home.scss'
-
+// Services and actions
 import GiphyService from '../../api/giphy'
 import { setTrendingList } from '../../actions/giphy'
-
+import { toggleModal } from '../../actions/modal'
+// Components
 import GiphyThumbnail from '../../components/GiphyThumbnail'
 
 class Home extends React.Component {
@@ -21,6 +22,7 @@ class Home extends React.Component {
   }
   render () {
     const { trendingData } = this.props.giphyState
+    const { toggleModal } = this.props
     console.log('>>>>>>>>>> trendingData', trendingData)
     return (
       <div className='home-container'>
@@ -33,6 +35,7 @@ class Home extends React.Component {
                   key={index}
                   userInfo={item.user}
                   images={item.images}
+                  onImgClick={() => toggleModal('GifViewer', true, item)}
                 />
               )
             })
@@ -49,7 +52,8 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch) => {
   return bindActionCreators({
-    setTrendingList,
+    toggleModal,
+    setTrendingList
   }, dispatch)
 }
 

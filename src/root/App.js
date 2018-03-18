@@ -8,6 +8,9 @@ import MainLayout from '../layouts/MainLayout'
 // Pages
 import HomePage from '../pages/Home'
 
+// Modals
+import GifViewerModal from '../modals/GifViewer'
+
 
 const routes = [
   {
@@ -34,6 +37,7 @@ const App = (props) => {
                     route={route} />
                 ))
               }
+              <GifViewerModal />
             </div>
           )
         }}
