@@ -1,0 +1,14 @@
+.main-header {
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  height: 50px;
+  color: black;
+  background-color: white;
+  z-index: 1;
+  .brand-name {
+    font-size: 30px;
+    margin-top: 5px;
+    margin-left: 20px;
+  }
+}
