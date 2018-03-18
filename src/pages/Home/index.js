@@ -64,7 +64,7 @@ class Home extends React.Component {
         </div>
         <div className='load-more'>
           {
-            !this.state.isLoadingMore && <span onClick={() => this.loadMore()}> Load more </span>
+            !this.state.isLoadingMore && <span onClick={() => this.loadMore()}> Load more... </span>
           }
           {
             this.state.isLoadingMore && <span> <img src={LoadingImg} alt='loading-img'/> </span>
