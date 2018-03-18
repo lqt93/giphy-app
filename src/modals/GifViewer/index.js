@@ -19,11 +19,10 @@ class GifViewerModal extends React.Component {
     return (
       <DefaultModal
         id='gif-viewer'
-        modalStyle={{ background: 'white' }}
         isOpen={GifViewer.isOpen}
         handleCancel={() => onCancel()}>
         <div className='gif-viewer'>
-          <div>
+          <div className='gif__img-container'>
             <img src={GifViewer.data.images.downsized_large.url} alt='gif-img' />
           </div>
         </div>

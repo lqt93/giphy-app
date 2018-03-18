@@ -19,14 +19,14 @@
 }
 
 // 3 columns
-@media only screen and (max-width: 530px) and (min-width: 820px)  {
+@media only screen and (min-width: 530px) and (max-width: 820px)  {
   .giphy-grid {
     max-width: 750px;
   }
 }
 
 // 3 columns
-@media only screen and (max-width: 820px) and (min-width: 1050px)  {
+@media only screen and (min-width: 820px) and (max-width: 1050px)  {
   .giphy-grid {
     max-width: 1000px;
   }

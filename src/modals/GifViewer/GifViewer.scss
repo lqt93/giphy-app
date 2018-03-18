@@ -1,5 +1,10 @@
 .gif-viewer {
-  background-color: white;
-  border-radius: 20px;
-  padding: 20px; 
+  background-color: #f4f4f4;
+  border-radius: 15px;
+  padding: 20px;
+  .gif__img-container {
+    img {
+      width: 100%;
+    }
+  }
 }
