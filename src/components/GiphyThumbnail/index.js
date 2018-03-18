@@ -10,9 +10,9 @@ class GiphyThumbnail extends React.Component {
     } = this.props
     return (
       <div className='giphy-thumbnail'>
-        <div className='thumnail-container'>
+        <div className='thumbnail-container'>
           <div className='img-prev-container'>
-            <img src={images.downsized_medium.url} alt='gif-from-giphy' />
+            <img src={images.fixed_width.url} alt='gif-from-giphy' />
           </div>
           <div className='img-info-container'>
 
