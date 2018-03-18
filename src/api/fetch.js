@@ -1,5 +1,4 @@
 import axios from 'axios'
-import Keys from '../config/keys' 
 
 type fetchOptions = {
   method?: string; // Default: GET
@@ -11,11 +10,10 @@ type fetchOptions = {
 }
 
 const fetchInstance = axios.create({
-  baseURL: Keys.api_domain || 'http://localhost:5000',
+  baseURL: 'https://api.giphy.com/v1',
   headers: {
     'Content-Type': 'application/json'
-  },
-  withCredentials: true
+  }
 })
 
 function _fetch (url: string, options: fetchOptions = {}) {
