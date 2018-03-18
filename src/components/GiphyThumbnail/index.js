@@ -15,17 +15,20 @@ class GiphyThumbnail extends React.Component {
           <div
             onClick={() => onImgClick()}
             className='img-prev-container'>
-            <img src={images.fixed_width.url} alt='gif-from-giphy' />
+            <img src={images && images.fixed_width.url} alt='gif-from-giphy' />
           </div>
           <div className='img-info-container'>
 
           </div>
         </div>
         <div className='user-container'>
-          <a href={userInfo.profile_url}  target='__blank'>
-            <span className='user-ava'> <img src={userInfo.avatar_url} alt='user-ava' /> </span>
-            <span className='user-name'> {userInfo.username} </span>
-          </a>
+          {
+            userInfo &&
+            <a href={userInfo.profile_url}  target='__blank'>
+              <span className='user-ava'> <img src={userInfo.avatar_url} alt='user-ava' /> </span>
+              <span className='user-name'> {userInfo.username} </span>
+            </a>
+          }
         </div>
       </div>
     )

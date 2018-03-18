@@ -1,6 +1,7 @@
 const initialState = {
   limit: 20,
-  offset: 1,
+  offset: 0,
+  hasMore: true,
   trendingData: []
 }
 
@@ -10,7 +11,7 @@ const giphy = (state = initialState, action) => {
       return {
         ...state,
         trendingData: [...state.trendingData, ...action.payload.data],
-        offset: action.payload.pagination.offset + 1
+        offset: state.offset + action.payload.pagination.count
       }
     default:
       return state
